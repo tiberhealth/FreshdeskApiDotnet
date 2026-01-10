@@ -19,7 +19,7 @@ public abstract class FreshdeskApiException : Exception, IDisposable
     /// </summary>
     public HttpResponseMessage Response { get; }
 
-    public string ResponseMessage { get; }
+    public string? ResponseMessage { get; }
     
     internal FreshdeskApiException(HttpResponseMessage response)
     {
